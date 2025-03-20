@@ -12,6 +12,8 @@ services:
       POSTGRES_PASSWORD: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - db
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
@@ -36,6 +38,8 @@ services:
     container_name: xa-back-1
     volumes:
       - .:/xa
+    networks:
+      - db
     ports:
       - "8000:8000"
     depends_on:
@@ -80,3 +84,6 @@ services:
 
 volumes:
   postgres_data:
+
+networks:
+  db:
