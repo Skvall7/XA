@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y git libpq-dev
 COPY requirements.txt /xa/requirements.txt
 RUN pip install --upgrade "pip<24.1" && \
     pip install -r requirements.txt
+RUN pip install --no-cache-dir cffi==1.14.4
 RUN pip install django-utils-six
 RUN pip install --upgrade pip && \
     pip install --no-use-pep517 anyjson==0.3.3 && \

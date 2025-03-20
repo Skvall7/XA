@@ -13,7 +13,7 @@ CacheControl==0.12.6
 cachetools==4.2.0
 celery==5.0.5
 certifi==2020.11.8
-cffi==1.14.4
+# cffi==1.14.4
 chardet==3.0.4
 click==7.1.2
 click-didyoumean==0.0.3
