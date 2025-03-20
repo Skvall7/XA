@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -y git libpq-dev
 # Copy requirements and install them
 COPY requirements.txt /xa/requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install django-utils-six
+
 
 # Copy the entire project
 COPY . /xa/
