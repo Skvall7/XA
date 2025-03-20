@@ -5,6 +5,15 @@ WORKDIR /xa
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y git libpq-dev
+RUN apt-get update && \
+    apt-get install -y \
+        gcc \
+        python3-dev \
+        libffi-dev \
+        build-essential \
+        zlib1g-dev \
+        libssl-dev && \
+    rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install them
 COPY requirements.txt /xa/requirements.txt
