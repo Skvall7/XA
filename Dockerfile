@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y git libpq-dev
 COPY requirements.txt /xa/requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
 RUN pip install django-utils-six
+RUN pip install --upgrade pip && \
+    pip install --no-use-pep517 anyjson==0.3.3 && \
+    pip install -r requirements.txt
 
 
 # Copy the entire project

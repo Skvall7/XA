@@ -5,7 +5,7 @@ aiocontextvars==0.2.2
 amqp==5.0.2
 
 # не работает без setuptools
-anyjson==0.3.3
+# anyjson==0.3.3
 
 asgiref==3.2.10
 billiard==3.6.3.0
