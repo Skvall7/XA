@@ -54,7 +54,6 @@ msgpack==1.0.1
 packaging==24.2
 prompt_toolkit==3.0.50
 proto-plus==1.26.1
-protobuf==4.24.0
 psycopg2-binary==2.9.9
 pyasn1==0.5.1
 pyasn1_modules==0.4.1
