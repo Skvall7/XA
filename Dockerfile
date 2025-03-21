@@ -26,7 +26,7 @@ RUN pip install django-utils-six
 #     pip install -r requirements.txt
 
 # Create directory for staticfiles
-RUN mkdir -p /staticfiles
+RUN mkdir -p /xa/staticfiles
 
 # Copy the entire project
 COPY . /xa/
