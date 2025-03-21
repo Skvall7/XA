@@ -170,8 +170,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 ECOM_API_KEY = os.getenv('ECOM_API_KEY')
 ECOM_API_LINK = os.getenv('ECOM_API_LINK')
 TG_BOT_NAME = os.getenv('TG_BOT_NAME')
