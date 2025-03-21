@@ -99,7 +99,6 @@ def send_telegram_message_trader(trader_id: str, message: str):
         return None
 
 
-
 @shared_task
 def update_base_rate_rub_to_usdt(*args):
 

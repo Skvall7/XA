@@ -3,6 +3,7 @@ from rest_framework.viewsets import GenericViewSet
 from rest_framework.response import Response
 from rest_framework.filters import BaseFilterBackend
 
+
 class GenericFilterBackend(BaseFilterBackend):
     def filter_queryset(self, request, queryset, view):
         search_fields = getattr(view, 'search_fields', [])

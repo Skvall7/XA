@@ -3,6 +3,7 @@ from django.contrib import admin
 from accounts.models import UserAccounts
 from .models import Merchant, Deal, Client, SubMerchantAccount
 
+
 class MerchantForm(forms.ModelForm):
     # Добавляем дополнительные поля для создания пользователя
     user_username = forms.CharField(
@@ -101,7 +102,6 @@ class MerchantAdmin(admin.ModelAdmin):
         Дополнительная логика перед сохранением сущности, если нужно.
         """
         super().save_model(request, obj, form, change)
-
 
 
 @admin.register(Deal)
