@@ -355,3 +355,4 @@ cython_debug/
 /docker-compose.dev.yaml
 /requirements.bak.txt
 /docker-compose.bak.yaml
+/staticfiles/
