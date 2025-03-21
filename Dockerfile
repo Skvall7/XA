@@ -25,6 +25,8 @@ RUN pip install django-utils-six
 #     pip install --no-use-pep517 anyjson==0.3.3 && \
 #     pip install -r requirements.txt
 
+# Create directory for staticfiles
+RUN mkdir -p /staticfiles
 
 # Copy the entire project
 COPY . /xa/

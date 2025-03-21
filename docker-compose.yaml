@@ -48,7 +48,7 @@ services:
     environment:
       DJANGO_SETTINGS_MODULE: config.settings
       RUN_CELERY: "False"
-    command: python manage.py runserver 0.0.0.0:8000
+    command: sh -c "python manage.py collectstatic --no-input && python manage.py runserver 0.0.0.0:8000"
 
   celery_worker:
     build:
